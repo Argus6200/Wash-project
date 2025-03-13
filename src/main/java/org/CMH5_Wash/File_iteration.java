@@ -31,8 +31,10 @@ public class File_iteration {
                             rowData.add("");  // Handle unknown or empty cells
                             break;
                     }
+
                 }
                 data.add(rowData);  // Add the row data to the list
+                System.out.println(rowData);
             }
 
         } catch (IOException e) {
@@ -58,6 +60,7 @@ public class File_iteration {
         }catch (IOException e){
             e.printStackTrace();
         }
+        //System.out.println(data);
         return data;
     }
 }
